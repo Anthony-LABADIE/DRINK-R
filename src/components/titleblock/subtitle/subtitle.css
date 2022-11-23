@@ -1,0 +1,38 @@
+.subtitle {
+  position: relative;
+  font-size: 1rem;
+  font-family: text;
+  margin-top: 2rem;
+  z-index: 2;
+  background-color: transparent;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .subtitle {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .subtitle {
+    font-size: 2rem;
+    white-space: nowrap;
+    margin-top: 3vh;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .subtitle {
+    font-size: 3rem;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 2100px) {
+  .subtitle {
+    font-size: 5rem;
+    white-space: nowrap;
+  }
+}

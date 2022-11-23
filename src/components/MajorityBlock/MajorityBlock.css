@@ -1,0 +1,178 @@
+.MajorityBlock__container {
+  position: absolute;
+  display: flex;
+  border: 1px solid grey;
+  background-color: #ffff9e;
+  padding: 40px 20px 10px 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  box-shadow: 10px 10px black;
+  width: 90%;
+  height: 30vh;
+}
+.MajorityBlock__para {
+  font-size: 1.3rem;
+  font-family: var(--text-font-family);
+  background-color: #ffff9e;
+  padding-bottom: 3rem;
+}
+.MajorityBlock__buttons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+.MajorityBlock__button-yes {
+  position: relative;
+  background-color: #80c487;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px black;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+  font-family: title-saint-regus;
+}
+.MajorityBlock__button-yes:active {
+  box-shadow: none;
+}
+
+.MajorityBlock__button-no {
+  position: relative;
+  background-color: #c68080;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px black;
+  padding: 0.7rem;
+  font-size: 1.7rem;
+  color: white;
+  font-family: title-saint-regus;
+}
+
+.MajorityBlock__button-no:active {
+  box-shadow: none;
+}
+
+.MajorityBlock__buttons button {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+@media all and (min-width: 430px) {
+  .MajorityBlock__container {
+    width: 22rem;
+  }
+}
+@media all and (min-width: 500px) {
+  .MajorityBlock__para {
+    font-size: 1.4rem;
+  }
+  .MajorityBlock__button-yes {
+    padding: 1rem;
+  }
+  .MajorityBlock__button-no {
+    padding: 1.2rem;
+  }
+}
+@media all and (min-width: 640px) {
+  .MajorityBlock__container {
+    width: 50%;
+    height: 40vh;
+    white-space: nowrap;
+  }
+  .MajorityBlock__buttons {
+    width: 60%;
+  }
+  .MajorityBlock__para {
+    padding-bottom: 4.5rem;
+  }
+}
+@media all and (min-width: 780px) {
+  .MajorityBlock__button-yes {
+    padding: 1.3rem;
+  }
+  .MajorityBlock__button-no {
+    padding: 1.5rem;
+  }
+}
+
+@media all and (min-width: 850px) {
+  .MajorityBlock__container {
+    position: absolute;
+    display: flex;
+    border: 1px solid grey;
+    background-color: #ffff9e;
+    padding: 40px 20px 10px 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    box-shadow: 10px 10px black;
+    width: 40%;
+    height: 40vh;
+  }
+  .MajorityBlock__para {
+    font-size: 1.5rem;
+    padding-bottom: 6rem;
+  }
+  .MajorityBlock__buttons {
+    width: 60%;
+  }
+}
+@media all and (min-width: 1000px) {
+  .MajorityBlock__buttons {
+    width: 60%;
+  }
+}
+@media all and (min-width: 1140px) {
+  .MajorityBlock__para {
+    font-size: 2rem;
+  }
+  .MajorityBlock__button-yes {
+    padding: 1.8rem;
+  }
+  .MajorityBlock__button-no {
+    padding: 2rem;
+  }
+}
+@media all and (min-width: 1700px) {
+  .MajorityBlock__para {
+    font-size: 2.5rem;
+  }
+  .MajorityBlock__button-yes {
+    padding: 2.3rem;
+  }
+  .MajorityBlock__button-no {
+    padding: 2.5rem;
+  }
+}
+@media all and (min-width: 2000px) {
+  .MajorityBlock__para {
+    font-size: 3.4rem;
+    padding-top: 2rem;
+    padding-bottom: 18rem;
+  }
+  .MajorityBlock__button-yes {
+    padding: 3rem;
+    font-size: 2.8rem;
+  }
+  .MajorityBlock__button-no {
+    padding: 3.4rem;
+    font-size: 2.8rem;
+  }
+}

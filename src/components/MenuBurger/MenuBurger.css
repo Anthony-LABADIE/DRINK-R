@@ -1,0 +1,230 @@
+.Burger-style span {
+  display: block;
+  width: 85px;
+  height: 5px;
+  background-color: black;
+  margin: 4px 0;
+}
+.Burger-style span:nth-last-child(2) {
+  transform: rotate(15deg);
+  width: 45px;
+}
+
+.Burger-style {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  z-index: 1000;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+.Menu-Burger .modalContainer {
+  background-color: #b8efe2;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  z-index: 100;
+  box-shadow: 10px 10px black;
+  top: 1.6rem;
+  left: 1.6rem;
+  width: 60vw;
+  height: 30vh;
+}
+
+.Menu-Burger {
+  position: fixed;
+  top: 4.5rem;
+  left: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 40vh;
+  z-index: 1000;
+}
+
+.span-right {
+  transform: rotate(45deg);
+  width: 75px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.4s ease;
+  margin: 4px 0;
+}
+.hide__midlespan {
+  opacity: 0;
+}
+.span-left {
+  transform: rotate(-45deg);
+  width: 75px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.4s ease;
+}
+
+.span-right-close {
+  transform: rotate(0deg);
+  width: 75px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.4s ease;
+  margin: 4px 0;
+}
+.show__midlespan {
+  opacity: 1;
+}
+.span-left-close {
+  transform: rotate(0deg);
+  width: 75px;
+  height: 3px;
+  background-color: black;
+  transition: all 0.4s ease;
+}
+
+.Menu-Burger .menu_burger__btn {
+  position: relative;
+  height: 3rem;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 10px 10px black;
+  background-color: #ffff9e;
+  z-index: 19;
+  font-family: var(--text-font-family);
+  font-size: 1rem;
+  width: 30vw;
+  margin-top: 2vh;
+}
+
+@media all and (min-width: 320px) {
+  .Burger-style {
+    top: 1rem;
+    left: 1rem;
+  }
+  .Burger-style span {
+    width: 35px;
+    height: 3px;
+  }
+
+  .Burger-style span:nth-last-child(2) {
+    width: 25px;
+    height: 2px;
+  }
+  .Menu-Burger .modalContainer {
+    top: 1.6rem;
+    left: 1.6rem;
+    width: 60vw;
+    height: 30vh;
+  }
+  .Menu-Burger .menu_burger__btn {
+    width: 48vw;
+    height: 6vh;
+    box-shadow: 5px 5px black;
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (min-width: 519px) {
+  .Burger-style {
+    top: 1rem;
+    left: 1rem;
+  }
+  .Menu-Burger {
+    top: 1rem;
+    left: 1rem;
+  }
+  .Burger-style span {
+    width: 60px;
+    height: 3px;
+  }
+  .Burger-style span:nth-last-child(2) {
+    width: 35px;
+  }
+  .modalContainer {
+    width: 35%;
+    height: 25%;
+    left: 3.5rem;
+    top: 3.5rem;
+  }
+  .menu_burger__btn {
+    margin-top: 3%;
+    width: 35vw;
+    height: 7vh;
+    left: 5px;
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .Menu-Burger {
+    top: 4rem;
+    left: 2rem;
+  }
+  .Burger-style span {
+    width: 70px;
+    height: 4px;
+  }
+  .Burger-style span:nth-last-child(2) {
+    width: 38px;
+  }
+  .modalContainer {
+    width: 30%;
+    height: 30%;
+    left: 4rem;
+    top: 4.5rem;
+  }
+  .menu_burger__btn {
+    margin-top: 8%;
+    width: 33vw;
+    height: 7vh;
+    left: -8px;
+  }
+}
+@media all and (min-width: 800px) {
+  .Menu-Burger {
+    top: 4rem;
+    left: 2rem;
+  }
+  .Burger-style span {
+    width: 70px;
+    height: 4px;
+  }
+  .Burger-style span:nth-last-child(2) {
+    width: 38px;
+  }
+  .modalContainer {
+    width: 30%;
+    height: 35%;
+    left: 4rem;
+    top: 4.5rem;
+  }
+  .Menu-Burger .menu_burger__btn {
+    width: 30vw;
+    height: 8vh;
+    left: 4px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .Burger-style {
+    top: 2rem;
+    left: 2rem;
+  }
+  .Menu-Burger .modalContainer {
+    width: 40vw;
+    height: 40%;
+    left: 3.5rem;
+    top: 3rem;
+  }
+
+  .Menu-Burger .menu_burger__btn {
+    width: 30vw;
+    height: 10vh;
+    left: 3px;
+    font-size: 1.5rem;
+  }
+}

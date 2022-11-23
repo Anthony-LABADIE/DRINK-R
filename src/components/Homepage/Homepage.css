@@ -1,0 +1,67 @@
+.homePage {
+  position: relative;
+  background-color: var(--home-bg-color);
+  min-height: 100vh;
+  height: auto;
+}
+.faded {
+  background-color: var(--home-bg-color);
+  opacity: 0.3;
+}
+.homePage__container {
+  background-color: var(--home-bg-color);
+  transition: all 0.3s ease;
+  width: 100vw;
+}
+.cocktail__mainpage {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 90%;
+}
+
+.mintleaves {
+  transform: rotate(-25deg);
+  width: 95%;
+  position: fixed;
+  top: 40%;
+  left: -35%;
+  background-color: transparent;
+  z-index: 0;
+}
+
+@media screen and (min-width: 404px) {
+  .cocktail__mainpage {
+    width: 80%;
+  }
+
+  .mintleaves {
+    width: 75%;
+    top: 35%;
+    left: -15%;
+  }
+}
+
+@media screen and (min-width: 519px) {
+  .cocktail__mainpage {
+    width: 60%;
+  }
+
+  .mintleaves {
+    width: 65%;
+    top: 35%;
+    left: -15%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cocktail__mainpage {
+    width: 56%;
+  }
+
+  .mintleaves {
+    width: 45%;
+    top: 35%;
+    left: 5%;
+  }
+}

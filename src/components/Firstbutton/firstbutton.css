@@ -1,0 +1,92 @@
+.home__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 7rem;
+  border: none;
+  background-color: #ffff9e;
+  font-size: 1.3rem;
+  box-shadow: 10px 10px black;
+  transform: skew(20deg) translate(-45%, -50%);
+  transition: all 0.2s ease;
+  z-index: 99;
+}
+.home__button:hover {
+  box-shadow: 15px 15px black;
+  transform: skew(20deg) translate(-46%, -51%);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.home__button:active {
+  box-shadow: 0 0;
+  transition: all 0.2s ease;
+}
+.home__button span {
+  position: absolute;
+  width: 100%;
+  transform: skew(-20deg) translate(-51%, -51%);
+  font-family: regus;
+  font-family: title-saint-regus;
+}
+@media all and (min-width: 360px) {
+  .home__button {
+    font-size: 1.3rem;
+    width: 17rem;
+  }
+}
+@media all and (min-width: 440px) {
+  .home__button {
+    font-size: 1.3rem;
+    height: 8rem;
+    width: 60%;
+  }
+}
+@media all and (min-width: 540px) {
+  .home__button {
+    font-size: 1.5rem;
+    height: 10rem;
+    width: 50%;
+  }
+}
+@media all and (min-width: 700px) {
+  .home__button {
+    font-size: 1.7rem;
+    height: 10rem;
+    width: 45%;
+  }
+}
+@media all and (min-width: 850px) {
+  .home__button {
+    font-size: 1.7rem;
+    height: 11rem;
+    width: 40%;
+  }
+}
+@media all and (min-width: 950px) {
+  .home__button {
+    font-size: 1.7rem;
+    height: 11rem;
+    width: 30%;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .home__button {
+    width: 30%;
+  }
+}
+
+@media all and (min-width: 1800px) {
+  .home__button {
+    width: 20%;
+  }
+}
+@media all and (min-width: 2100px) {
+  .home__button {
+    width: 27%;
+    height: 16rem;
+    font-size: 2.5rem;
+  }
+}

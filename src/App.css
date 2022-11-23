@@ -1,0 +1,166 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: black;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "title-saint-regus";
+  src: url("/src/assets/FontsFree-Net-Sonar-Hubermann-SaintRegus-SemiBold.ttf");
+}
+@font-face {
+  font-family: "text";
+  src: url("./assets/Poppins-Medium.ttf");
+}
+:root {
+  --home-bg-color: #eb9ca4;
+  --cocktail-list-bg-color: #80c487;
+  --recipe-bg-color: #46a9bf;
+  --btn-bg-color: #ffff9e;
+  --btn-bg-color-click: #fe9971;
+  --crd-bg-color: #fe9971;
+  --btn-font-color: #131313;
+  --btn-box-shadow: 10px 10px #131313;
+  --title-font-family: Saint-Regus-Gras;
+  --text-font-family: text;
+  --h1-font-size: 5rem;
+  --h1-font-size-mobile: 2rem;
+  --h2-font-size: 2.5rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1rem;
+  --h4-font-size: 1rem;
+  --from-bg-color: #ffff9e;
+}
+.App {
+  position: relative;
+  height: auto;
+}
+.btn {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 0 0;
+  transition: all 0.3s ease;
+}

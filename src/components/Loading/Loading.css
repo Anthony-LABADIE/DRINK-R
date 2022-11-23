@@ -1,0 +1,188 @@
+.allcocktails_section-placeholder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: var(--cocktail-list-bg-color);
+}
+
+.list__allcocktails-placeholder {
+  position: relative;
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  flex-wrap: wrap;
+  z-index: 5;
+}
+.list__allcocktails-placeholder {
+  margin: 0 10vw;
+  padding-top: 15vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 5;
+}
+.searchbar-placeholder {
+  position: relative;
+  width: calc(90% - 2rem);
+  height: 3rem;
+  background-color: rgb(177, 177, 177);
+  border: 1px solid black;
+  border-radius: 100px;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+.searchbar-placeholder:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  background: rgb(177, 177, 177);
+  filter: blur(10px);
+  width: 200%;
+  height: 1rem;
+  z-index: 10;
+  transform: rotateZ(60deg);
+  animation: sheen 0.5s infinite ease;
+}
+.allcocktails__card-placeholder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 65vh;
+  width: 75vw;
+  padding-top: 3vh;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px black;
+  margin: 2rem 1rem 1rem 1rem;
+  margin-bottom: 3vh;
+  background-color: rgb(214, 214, 214);
+}
+
+.allcocktails__title-placeholder {
+  width: 70%;
+  height: 2rem;
+  border-radius: 100px;
+  margin-top: 2rem;
+  background-color: rgb(163, 162, 162);
+}
+
+.allcocktails__img-placeholder {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin-top: 1rem;
+  background-color: grey;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 55vw;
+  margin-top: 5vh;
+}
+.allcocktails__img-placeholder:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  background: rgb(177, 177, 177);
+  filter: blur(10px);
+  width: 200%;
+  height: 1rem;
+  z-index: 10;
+  transform: rotateZ(60deg);
+  animation: sheen 0.5s infinite ease;
+}
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -40em);
+  }
+}
+@media screen and (min-width: 400px) {
+  .allcocktails__card-placeholder {
+    height: 65vh;
+    width: 60vw;
+  }
+
+  .allcocktails__img-placeholder {
+    width: 45vw;
+  }
+}
+@media screen and (min-width: 525px) {
+  .allcocktails__card-placeholder {
+    height: 75vh;
+    width: 65vw;
+  }
+
+  .allcocktails__img-placeholder {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 600px) {
+  .allcocktails__card-placeholder {
+    height: 90vh;
+    width: 60vw;
+  }
+
+  .allcocktails__img-placeholder {
+    max-width: 45vw;
+  }
+  .searchbar-placeholder {
+    width: calc(70% - 2rem);
+  }
+}
+@media screen and (min-width: 735px) {
+  .allcocktails__card-placeholder {
+    height: 90vh;
+    width: 75vw;
+  }
+
+  .allcocktails__img-placeholder {
+    width: 55vw;
+  }
+}
+@media screen and (min-width: 800px) {
+  .searchbar-placeholder {
+    width: calc(60% - 2rem);
+  }
+  .allcocktails__card-placeholder {
+    height: 105vh;
+    width: 60vw;
+  }
+
+  .allcocktails__img-placeholder {
+    max-width: 45vw;
+  }
+}
+@media screen and (min-width: 900px) {
+  .allcocktails__card-placeholder {
+    height: 110vh;
+    width: 55vw;
+  }
+
+  .allcocktails__img-placeholder {
+    max-width: 45vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .allcocktails__card-placeholder {
+    height: 70vh;
+    width: 28vw;
+  }
+
+  .allcocktails__img-placeholder {
+    width: 20vw;
+  }
+  .searchbar-placeholder {
+    position: absolute;
+    top: -5rem;
+    width: calc(30% - 2rem);
+  }
+}
