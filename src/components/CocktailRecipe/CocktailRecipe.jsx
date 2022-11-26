@@ -7,9 +7,11 @@ import { motion } from "framer-motion";
 import ButtonListResult from "../Buttonlist/ButtonListResult";
 import SearchBar from "../Buttonlist/SearchBar";
 import RecipeIngredientsList from "./RecipeIngredientsList";
-import "./CocktailRecipe.css";
 import Title from "../titleblock/title/Title";
+import BlueTransparent from "../../assets/images/blue_transparent.png";
+import Etoile from "../../assets/images/etoile.png";
 import MenuBurger from "../MenuBurger/MenuBurger";
+import "./CocktailRecipe.css";
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 100,
@@ -89,8 +91,8 @@ const CocktailRecipe = ({ userInput, handleChange, search, setSearch }) => {
     <div className="cocktailRecipe__container">
       <img
         className="cocktailRecipe__bg"
-        src="../src/assets/images/blue_transparent.png"
-        alt=""
+        src={BlueTransparent}
+        alt="img cocktail"
       />
       <MenuBurger />
       <Title />
@@ -124,11 +126,7 @@ const CocktailRecipe = ({ userInput, handleChange, search, setSearch }) => {
           className="cocktailRecipe__card card "
           style={{ transform: props.xys.to(trans) }}
         >
-          <img
-            className="card__star"
-            src="../src/assets/images/etoile.png"
-            alt=""
-          />
+          <img className="card__star" src={Etoile} alt="img etoile" />
           <div className="cocktailRecipe__img-placeholder" />
           <img
             src={cocktail.strDrinkThumb}

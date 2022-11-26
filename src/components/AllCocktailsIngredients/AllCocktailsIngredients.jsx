@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import Title from "../titleblock/title/Title";
 import AllCocktailsCardIngredients from "./AllCocktailsCardIngredients";
-import "../AllCocktails/AllCocktails.css";
 import MenuBurger from "../MenuBurger/MenuBurger";
 import SearchBar from "../Buttonlist/SearchBar";
+import GrennCocktails from "../../assets/images/green_cocktail.png";
 import ButtonListResult from "../Buttonlist/ButtonListResult";
+import "../AllCocktails/AllCocktails.css";
 
 const AllCocktailsIngredients = ({
   propsFetche,
@@ -38,11 +39,7 @@ const AllCocktailsIngredients = ({
           <AllCocktailsCardIngredients propsFetche={e} />
         ))}
       </div>
-      <img
-        className="green_drinks"
-        src="/src/assets/images/green_cocktail.png"
-        alt="green_cocktail"
-      />
+      <img className="green_drinks" src={GrennCocktails} alt="green_cocktail" />
     </div>
   );
 };

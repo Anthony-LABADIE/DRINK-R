@@ -1,6 +1,10 @@
 import { React, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
+import Favorite from "../../assets/images/favorite.png";
+import NotFavorite from "../../assets/images/notFavorite.png";
+import PictoDrink from "../../assets/images/picto_drink.jpg";
+import PictoShaker from "../../assets/images/picto_shaker.png";
 import "../AllCocktails/AllCocktailsCard/AllCocktailsCard.css";
 
 const AllCocktailsCardIngredients = ({ propsFetche }) => {
@@ -41,11 +45,7 @@ const AllCocktailsCardIngredients = ({ propsFetche }) => {
         <div className="allcocktails__card">
           <div className="allcocktails__frontcard">
             <img
-              src={
-                isFavorite
-                  ? "/src/assets/images/favorite.png"
-                  : "/src/assets/images/notFavorite.png"
-              }
+              src={isFavorite ? { Favorite } : { NotFavorite }}
               className="heart__image"
               alt="heart"
             />
@@ -63,20 +63,12 @@ const AllCocktailsCardIngredients = ({ propsFetche }) => {
                 setIsFavorite(false);
               }}
               role="presentation"
-              src={
-                isFavorite
-                  ? "/src/assets/images/favorite.png"
-                  : "/src/assets/images/notFavorite.png"
-              }
+              src={isFavorite ? { Favorite } : { NotFavorite }}
               className="heart__image"
               alt="heart"
             />
             <div className="firstblock__title">
-              <img
-                className="drink_picto"
-                src="/src/assets/images/picto_drink.jpg"
-                alt="picto_drink"
-              />
+              <img className="drink_picto" src={PictoDrink} alt="picto_drink" />
               <h5>Ingredients: </h5>
             </div>
             <ul className="allcocktails__ingredientsList">
@@ -90,7 +82,7 @@ const AllCocktailsCardIngredients = ({ propsFetche }) => {
             <div className="secondblock__title">
               <img
                 className="shaker_picto"
-                src="/src/assets/images/picto_shaker.png"
+                src={PictoShaker}
                 alt="picto_shaker"
               />
               <h5> Recipe :</h5>

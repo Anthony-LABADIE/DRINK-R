@@ -6,10 +6,11 @@ import PropTypes from "prop-types";
 import Loading from "../Loading/Loading";
 import Title from "../titleblock/title/Title";
 import AllCocktailsCard from "./AllCocktailsCard/AllCocktailsCard";
-import "./AllCocktails.css";
 import MenuBurger from "../MenuBurger/MenuBurger";
 import SearchBar from "../Buttonlist/SearchBar";
+import GrennCocktails from "../../assets/images/green_cocktail.png";
 import ButtonListResult from "../Buttonlist/ButtonListResult";
+import "./AllCocktails.css";
 
 let Arraycocktails = [];
 
@@ -90,11 +91,7 @@ const AllCocktails = ({
           />
         ))}
       </div>
-      <img
-        className="green_drinks"
-        src="./src/assets/images/green_cocktail.png"
-        alt="green_cocktail"
-      />
+      <img className="green_drinks" src={GrennCocktails} alt="green_cocktail" />
       {
         (window.onscroll = function () {
           const scrollPosition = window.scrollY;

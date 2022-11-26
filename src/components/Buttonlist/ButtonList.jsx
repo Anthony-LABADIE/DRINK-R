@@ -5,6 +5,8 @@ import Buttons from "./Buttons";
 import SearchBar from "./SearchBar";
 import ButtonListResult from "./ButtonListResult";
 import Titleblock from "../titleblock/Titleblock";
+import PinkCocktailtrans from "../../assets/images/pink_cocktailtrans.png";
+import Mint from "../../assets/images/Fresh-mint-leaves--on-transparent-background-PNG 16.48.26.png";
 import "./ButtonList.css";
 
 const ButtonList = ({ userInput, handleChange, search, setSearch }) => {
@@ -13,14 +15,10 @@ const ButtonList = ({ userInput, handleChange, search, setSearch }) => {
       <Titleblock />
       <img
         className="home__bg-pink"
-        src="/src/assets/images/pink_cocktailtrans.png"
-        alt=""
+        src={PinkCocktailtrans}
+        alt="img pink cocktails"
       />
-      <img
-        className="home__bg-mint"
-        src="/src/assets/images/Fresh-mint-leaves--on-transparent-background-PNG 16.48.26.png"
-        alt=""
-      />
+      <img className="home__bg-mint" src={Mint} alt="img mint" />
       <NavLink className="margin" to="/FormIngredients">
         <Buttons
           type=""

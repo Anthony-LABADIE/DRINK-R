@@ -3,6 +3,8 @@ import Navigation from "../Navigation";
 import Titleblock from "../titleblock/Titleblock";
 import MajorityBlock from "../MajorityBlock/MajorityBlock";
 import Footer from "../Footer/Footer";
+import PinkCocktailtrans from "../../assets/images/pink_cocktailtrans.png";
+import Mint from "../../assets/images/Fresh-mint-leaves--on-transparent-background-PNG 16.48.26.png";
 import "./Homepage.css";
 
 const Homepage = () => {
@@ -17,14 +19,10 @@ const Homepage = () => {
 
         <img
           className="cocktail__mainpage"
-          src="/src/assets/images/pink_cocktailtrans.png"
+          src={PinkCocktailtrans}
           alt="pink cocktail"
         />
-        <img
-          className="mintleaves"
-          src="/src/assets/images/Fresh-mint-leaves--on-transparent-background-PNG 16.48.26.png"
-          alt="mintleaves"
-        />
+        <img className="mintleaves" src={Mint} alt="mintleaves" />
       </div>
       {!show && <Footer />}
     </div>

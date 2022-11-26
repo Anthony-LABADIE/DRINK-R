@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import Title from "../titleblock/title/Title";
 import ingredients from "./IngredientsArray";
+import PinkCocktailtrans from "../../assets/images/pink_cocktailtrans.png";
+import Mint from "../../assets/images/Fresh-mint-leaves--on-transparent-background-PNG 16.48.26.png";
 import "./FormIngredients.css";
 
 const FormIngredients = ({
@@ -79,16 +81,8 @@ const FormIngredients = ({
   };
   return (
     <div className="homePage">
-      <img
-        className="home__bg-pink"
-        src="/src/assets/images/pink_cocktailtrans.png"
-        alt=""
-      />
-      <img
-        className="home__bg-mint"
-        src="/src/assets/images/Fresh-mint-leaves--on-transparent-background-PNG 16.48.26.png"
-        alt=""
-      />
+      <img className="home__bg-pink" src={PinkCocktailtrans} alt="" />
+      <img className="home__bg-mint" src={Mint} alt="" />
       <Title />
       <h2 className="subtitle">Choose your ingredients</h2>
       <div className="form__container">
