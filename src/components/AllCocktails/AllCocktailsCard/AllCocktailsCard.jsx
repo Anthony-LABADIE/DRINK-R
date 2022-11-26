@@ -1,7 +1,11 @@
 import { React, useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import "./AllCocktailsCard.css";
 import axios from "axios";
+import PropTypes from "prop-types";
+import Favorite from "../../../assets/images/favorite.png";
+import PictoDrink from "../../../assets/images/picto_drink.jpg";
+import NotFavorite from "../../../assets/images/notFavorite.png";
+import PictoShaker from "../../../assets/images/picto_shaker.png";
+import "./AllCocktailsCard.css";
 
 const AllCocktailsCard = ({ propsFetche, cocktail }) => {
   const [cocktails, setCocktail] = useState({});
@@ -42,11 +46,7 @@ const AllCocktailsCard = ({ propsFetche, cocktail }) => {
         <div className="allcocktails__card">
           <div className="allcocktails__frontcard">
             <img
-              src={
-                isFavorite
-                  ? "src/assets/images/favorite.png"
-                  : "src/assets/images/notFavorite.png"
-              }
+              src={isFavorite ? { Favorite } : { NotFavorite }}
               className="heart__image bubbly-button"
               alt="heart"
             />
@@ -64,20 +64,12 @@ const AllCocktailsCard = ({ propsFetche, cocktail }) => {
                 setIsFavorite(false);
               }}
               role="presentation"
-              src={
-                isFavorite
-                  ? "src/assets/images/favorite.png"
-                  : "src/assets/images/notFavorite.png"
-              }
+              src={isFavorite ? { Favorite } : { NotFavorite }}
               className="heart__image  bubbly-button"
               alt="heart"
             />
             <div className="firstblock__title">
-              <img
-                className="drink_picto"
-                src="src/assets/images/picto_drink.jpg"
-                alt="picto_drink"
-              />
+              <img className="drink_picto" src={PictoDrink} alt="picto_drink" />
               <h5>Ingredients: </h5>
             </div>
             <ul className="allcocktails__ingredientsList">
@@ -91,7 +83,7 @@ const AllCocktailsCard = ({ propsFetche, cocktail }) => {
             <div className="secondblock__title">
               <img
                 className="shaker_picto"
-                src="src/assets/images/picto_shaker.png"
+                src={PictoShaker}
                 alt="picto_shaker"
               />
               <h5> Recipe :</h5>
