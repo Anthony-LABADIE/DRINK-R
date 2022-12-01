@@ -82,7 +82,7 @@ const CocktailRecipe = ({ userInput, handleChange, search, setSearch }) => {
   useEffect(() => {
     axios
       .get(
-        `https://www.thecocktaildb.com/api/json/v2/9973533/lookup.php?i=${cocktail.strIngredient1}`
+        `https://www.thecocktaildb.com/api/json/v2/9973533/lookup.php?i=${cocktail}`
       )
       .then((response) => setSimilar(response.data.drinks[random]));
   }, [cocktail]);

@@ -1,8 +1,8 @@
 import { React, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import axios from "axios";
-// import Favorite from "../../assets/images/favorite.png";
-// import NotFavorite from "../../assets/images/notFavorite.png";
+import Favorite from "../../assets/images/favorite.png";
+import NotFavorite from "../../assets/images/notFavorite.png";
 import PictoDrink from "../../assets/images/picto_drink.jpg";
 import PictoShaker from "../../assets/images/picto_shaker.png";
 import "../AllCocktails/AllCocktailsCard/AllCocktailsCard.css";
@@ -45,11 +45,7 @@ const AllCocktailsCardIngredients = ({ propsFetche }) => {
         <div className="allcocktails__card">
           <div className="allcocktails__frontcard">
             <img
-              src={
-                isFavorite
-                  ? "/src/assets/images/favorite.png"
-                  : "/src/assets/images/notFavorite.png"
-              }
+              src={isFavorite ? Favorite : NotFavorite}
               className="heart__image"
               alt="heart"
             />
@@ -67,11 +63,7 @@ const AllCocktailsCardIngredients = ({ propsFetche }) => {
                 setIsFavorite(false);
               }}
               role="presentation"
-              src={
-                isFavorite
-                  ? "/src/assets/images/favorite.png"
-                  : "/src/assets/images/notFavorite.png"
-              }
+              src={isFavorite ? Favorite : NotFavorite}
               className="heart__image"
               alt="heart"
             />
