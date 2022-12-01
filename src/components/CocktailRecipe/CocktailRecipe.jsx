@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import ButtonListResult from "../Buttonlist/ButtonListResult";
 import SearchBar from "../Buttonlist/SearchBar";
 import RecipeIngredientsList from "./RecipeIngredientsList";
@@ -82,7 +82,7 @@ const CocktailRecipe = ({ userInput, handleChange, search, setSearch }) => {
   useEffect(() => {
     axios
       .get(
-        `https://www.thecocktaildb.com/api/json/v2/9973533/lookup.php?i=${cocktail}`
+        `https://www.thecocktaildb.com/api/json/v2/9973533/filter.php?i=${cocktail.strIngredient1}`
       )
       .then((response) => setSimilar(response.data.drinks[random]));
   }, [cocktail]);
@@ -110,16 +110,7 @@ const CocktailRecipe = ({ userInput, handleChange, search, setSearch }) => {
         />
       </form>
 
-      <motion.div
-        className="cocktailRecipe__motion"
-        initial={{ y: "100%" }}
-        animate={{ y: "0" }}
-        transition={{
-          duration: 0.8,
-          delay: 0,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
-      >
+      <div className="cocktailRecipe__motion">
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
           onMouseLeave={() => set({ xys: [0, 0, 1] })}
@@ -162,7 +153,7 @@ const CocktailRecipe = ({ userInput, handleChange, search, setSearch }) => {
             {cocktail.strInstructions}
           </p>
         </animated.div>
-      </motion.div>
+      </div>
       {similar && similar.idDrink !== null ? (
         <NavLink to={`/CocktailRecipe/${similar.idDrink}`}>
           <button
