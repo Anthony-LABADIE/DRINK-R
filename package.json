@@ -35,5 +35,6 @@
     "husky": "^7.0.0",
     "prettier": "^2.5.1",
     "vite": "^2.8.0"
-  }
+  },
+  "homepage": "https://wild-circus.synology.me"
 }
