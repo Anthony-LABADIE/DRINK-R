@@ -33,6 +33,7 @@
   height: auto;
   max-height: 13rem;
   overflow: scroll;
+  overflow-x:hidden;
   margin: 0;
   background-color: var(--recipe-bg-color);
   z-index: 100;

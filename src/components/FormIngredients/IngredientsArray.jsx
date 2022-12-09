@@ -43,23 +43,7 @@ const ingredients = {
       isActive: false,
     },
     {
-      name: "WATER",
-      isActive: false,
-    },
-    {
-      name: "PINEAPPLE",
-      isActive: false,
-    },
-    {
-      name: "PASSION FRUIT JUICE",
-      isActive: false,
-    },
-    {
       name: "GINGER BEER",
-      isActive: false,
-    },
-    {
-      name: "SPRITE",
       isActive: false,
     },
     {
@@ -71,19 +55,7 @@ const ingredients = {
       isActive: false,
     },
     {
-      name: "GRENADINE",
-      isActive: false,
-    },
-    {
-      name: "COCA-COLA",
-      isActive: false,
-    },
-    {
       name: "LEMONADE",
-      isActive: false,
-    },
-    {
-      name: "7-UP",
       isActive: false,
     },
     {
@@ -101,19 +73,11 @@ const ingredients = {
       isActive: false,
     },
     {
-      name: "ICE",
-      isActive: false,
-    },
-    {
       name: "LEMON",
       isActive: false,
     },
     {
       name: "MILK",
-      isActive: false,
-    },
-    {
-      name: "CACAO",
       isActive: false,
     },
   ],
