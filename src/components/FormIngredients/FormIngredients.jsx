@@ -79,10 +79,6 @@ const FormIngredients = ({
       propsSetIngredient(filterElement);
     }
   };
-
-  const errorCocktails = () => {
-    prompt("Aucun cocktails !");
-  };
   return (
     <div className="homePage">
       <img className="home__bg-pink" src={PinkCocktailtrans} alt="" />
@@ -152,7 +148,6 @@ const FormIngredients = ({
               onClick={() => {
                 deleteValeur();
                 filtrebtn();
-                errorCocktails();
               }}
             >
               LET'S GO
